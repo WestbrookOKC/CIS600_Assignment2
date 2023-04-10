@@ -44,3 +44,7 @@ the assignment should run perfectly with the certificate and private keys which 
 
 contact me: kfeng07@syr.edu
 
+
+New edition: Because i got the warning from AWS, they told me that i can not show the certificate and private keys in public website, I have removed it.
+
+But if you want to run it, please contact me at my email, I will provide them to you. Thank you!
