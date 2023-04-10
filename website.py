@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # Set up the DynamoDB client
-dynamodb = boto3.resource('dynamodb', aws_access_key_id='AKIAZAS5CYFQRUYRKDVA', aws_secret_access_key='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', region_name='us-east-2')
+dynamodb = boto3.resource('dynamodb', aws_access_key_id='xxx', aws_secret_access_key='xxx', region_name='us-east-2')
 table = dynamodb.Table('wx_data')
 
 # Set the timestamp threshold
