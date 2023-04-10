@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The latest sensor data values received from all the sensors of station_1</title>
+</head>
+<body>
+    <h1>The latest sensor data values received from all the sensors of station_1</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Station ID</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>CO2</th>
+                <th>Rain Height</th>
+                <th>Wind Direction</th>
+                <th>Wind Intensity</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if items %}
+            <tr>
+                <td>{{ items.station_id }}</td>
+                <td>{{ items.temperature }}</td>
+                <td>{{ items.humidity }}</td>
+                <td>{{ items.co2 }}</td>
+                <td>{{ items.rain_height }}</td>
+                <td>{{ items.wind_direction }}</td>
+                <td>{{ items.wind_intensity }}</td>
+                <td>{{ items.timestamp }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="8">No data available.</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sensor Data</title>
+</head>
+<body>
+    <h1>{{ sensor_name }} Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Station ID</th>
+                <th>Timestamp</th>
+                <th>{{ sensor_name }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td>{{ item.station_id }}</td>
+                <td>{{ item.timestamp }}</td>
+                <td>{{ item.value }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
